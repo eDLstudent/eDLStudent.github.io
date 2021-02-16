@@ -1,0 +1,36 @@
+<body>
+      <header>
+      </header>
+      <section>
+      </section>
+            
+<section>
+ 
+<img src="dinosaur.jpg" alt="Triceratops skeleton, Natural History Museum of Los Angeles County." width="100px"> 
+ 
+<p>Here we will add a link to the <a href="https://en.wikipedia.org/wiki/Dinosaur">Wikipedia page about dinosaurs</a></p> 
+ 
+</section>
+
+    <script> const link = document.querySelector('a');
+    link.textContent = 'Mozilla Developer Network';
+    link.href = 'https://developer.mozilla.org';
+    const sect = document.querySelector('section');
+    const para = document.createElement('p');
+para.textContent = 'Write your text here.';sect.appendChild(para);
+const text = document.createTextNode(' — the premier source for web development knowledge.');
+const linkPara = document.querySelector('p');
+linkPara.appendChild(text);
+sect.appendChild(linkPara);
+sect.removeChild(linkPara);
+linkPara.remove();
+para.style.color = 'white';
+para.style.backgroundColor = 'black';
+para.style.padding = '10px';
+para.style.width = '250px';
+para.style.textAlign = 'center';
+</script>
+
+
+  </body>
+</html>
